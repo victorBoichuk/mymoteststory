@@ -89,10 +89,10 @@ try {
 	
 	// Провіряємо чи потрібні стрілки назад 
 	if ($page != 1) $pervpage = '<a href=".?page=1&date='.$date.'" title="На початок"><<</a>
-																 <a href=".?page='. ($page - 1) .'&date='.$date.'" title="Попередня сторінка"><</a> ';
+	<a href=".?page='. ($page - 1) .'&date='.$date.'" title="Попередня сторінка"><</a> ';
 	// Провіряємо чи потрібні стрілки вперед
 	if ($page != $total_page) $nextpage = ' <a href=".?page='. ($page + 1) .'&date='.$date.'" title="Наступна сторінка">></a>
-																		 <a href=".?page=' .$total_page. '&date='.$date.'" title="В кінець">>></a>';
+	<a href=".?page=' .$total_page. '&date='.$date.'" title="В кінець">>></a>';
 
 	// Знаходимо дві найближчі сторінки з обох боків
 	if($page - 2 > 0) $page2left = ' <a href=".?page='. ($page - 2) .'&date='.$date.'">'. ($page - 2) .'</a> | ';
